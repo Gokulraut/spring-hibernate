@@ -63,7 +63,7 @@ public class EmployeeDaoImpl implements EmployeeDao{
             SimpleDateFormat simpleDateFormat= new SimpleDateFormat("dd-MM-yyyy");
             dob=simpleDateFormat.format(employee.getEmpDOB());
             if (employee.getEmpName().equals(input)|| String.valueOf(employee.getEmpId()).equals(input)|| String.valueOf(employee.getEmpSalary()).equals(input)||
-                    String.valueOf(employee.getEmpContactNumber()).equals(input)||dob.equals(input)||employee.getEmpName().equals(input)){
+                    String.valueOf(employee.getEmpContactNumber()).equals(input)||dob.equals(input)||employee.getEmpEmailId().equals(input)||employee.getEmpName().equals(input)){
 
             employeeList.add(employee);
         }}
