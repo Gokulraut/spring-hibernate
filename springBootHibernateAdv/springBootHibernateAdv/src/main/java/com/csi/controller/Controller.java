@@ -93,5 +93,11 @@ public class Controller {
 
         return ResponseEntity.ok(employeeServiceImpl.getAllData().stream().sorted(Comparator.comparing(Employee::getEmpDOB).reversed()).collect(Collectors.toList()));
     }
+
+    @DeleteMapping("/sayhello")
+    public ResponseEntity<String>sayHello(){
+
+        return ResponseEntity.ok("hello ");
+    }
 }
 
